@@ -1,0 +1,137 @@
+@media (min-width: 992px) {
+	.section-heading {
+		font-size: 4.8rem;
+	}
+
+	.section-padding {
+		padding: 8em 2em;
+	}
+
+	.header {
+		&__heading {
+			font-size: 5.2rem;
+		}
+
+		&__text {
+			font-size: 3rem;
+		}
+
+		&__img {
+			background-image: url('../img/1.jungle-big.jpg');
+		}
+	}
+
+	.burger-btn {
+		display: none;
+	}
+
+	.nav {
+		&-mobile {
+			display: none;
+		}
+
+		&-desktop {
+			display: flex;
+		}
+
+		&__item {
+			color: $black-color;
+			font-size: 2.2rem;
+
+			&:hover {
+				color: $white-color;
+			}
+
+			&::after {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				height: 0;
+				width: 100%;
+				content: '';
+				background-color: $black-color;
+				transition: height 300ms;
+				z-index: -5;
+			}
+
+			&:hover::after {
+				height: 100%;
+			}
+
+			&:hover {
+				color: $white-color;
+				background-color: $black-color;
+			}
+		}
+
+		&__logo {
+			padding: 0.5em;
+		}
+	}
+	.aboutus {
+		&__box {
+			margin: 5em 0;
+		}
+		&__text {
+			font-size: 2rem;
+		}
+
+		&__title {
+			font-size: 3.6rem;
+		}
+	}
+
+	.hero-img {
+		background-image: url('../img/3.girl-big.jpg');
+
+		&__box {
+			width: 70%;
+			height: 40%;
+		}
+		&__heading {
+			font-size: 3.2rem;
+		}
+	}
+
+	.offers {
+		&__cards {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
+		
+		&__card {
+			margin: 1em;
+			width: 300px;
+		}
+	}
+
+	.footer {
+		&__box {
+			&-logo {
+				font-size: 5rem;
+			}
+			
+			&-title {
+				font-size: 2.4rem;
+			}
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.nav {
+		&__logo {
+			padding: 0;
+		}
+	}
+	.hero-img {
+		&__box {
+			width: 50%;
+			height: 40%;
+		}
+		&__heading {
+			font-size: 4.2rem;
+		}
+	}
+}

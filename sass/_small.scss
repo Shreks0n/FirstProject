@@ -1,0 +1,27 @@
+@media (min-width: 576px) {
+	.aboutus {
+		&__box {
+			flex-direction: row;
+			justify-content: space-between;
+
+			&-text {
+				width: 55%;
+			}
+
+			&-img {
+				width: 40%;
+			}
+		}
+		&__img {
+			max-height: 300px;
+		}
+	}
+
+	.hero-img {
+		height: 300px;
+
+		&__heading {
+			font-size: 2rem;
+		}
+	}
+}
